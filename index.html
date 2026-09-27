@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quant Memo is a quantitative finance learning platform covering concepts, research, interviews, daily practice, and systematic trading."
+    />
+    <title>Quant Memo — Everything quant, in one place.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a href="https://quantmemo.com/" class="brand" aria-label="Quant Memo home">
+            <span class="brand-mark">QM</span>
+            <span class="brand-text">Quant Memo</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <div class="nav-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false">Learn</button>
+              <div class="nav-panel" role="menu">
+                <a href="https://quantmemo.com/learn" role="menuitem">Roadmap</a>
+                <a href="https://quantmemo.com/concepts" role="menuitem">Concepts</a>
+                <a href="https://quantmemo.com/glossary" role="menuitem">Glossary</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false">Practice</button>
+              <div class="nav-panel" role="menu">
+                <a href="https://quantmemo.com/daily" role="menuitem">Daily</a>
+                <a href="https://quantmemo.com/questions" role="menuitem">Question Bank</a>
+                <a href="https://quantmemo.com/interviews" role="menuitem">Interviews</a>
+                <a href="https://quantmemo.com/sheets/quant-dsa" role="menuitem">Coding</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false">Explore</button>
+              <div class="nav-panel" role="menu">
+                <a href="https://quantmemo.com/research" role="menuitem">Research</a>
+                <a href="https://quantmemo.com/strategies" role="menuitem">Strategies</a>
+                <a href="https://quantmemo.com/tools" role="menuitem">Tools</a>
+                <a href="https://quantmemo.com/memos" role="menuitem">Memos</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false">About</button>
+              <div class="nav-panel" role="menu">
+                <a href="https://quantmemo.com/about" role="menuitem">About</a>
+                <a href="https://quantmemo.com/writing" role="menuitem">Writing</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3.75a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V4.5a.75.75 0 01.75-.75zm0 13.5a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 01.75-.75zm8.25-5.25a.75.75 0 010 1.5h-1.5a.75.75 0 010-1.5h1.5zm-13.5 0a.75.75 0 010 1.5H5.25a.75.75 0 010-1.5h1.5zm9.27-4.77a.75.75 0 011.06 0l1.06 1.06a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm-9.04 9.04a.75.75 0 011.06 0l1.06 1.06a.75.75 0 11-1.06 1.06L7.98 17.2a.75.75 0 010-1.06zm0-9.04a.75.75 0 000 1.06l1.06 1.06A.75.75 0 108.98 7.2L7.92 6.14a.75.75 0 000-1.06zm9.04 9.04A.75.75 0 0016.8 17.2l1.06 1.06a.75.75 0 101.06-1.06l-1.06-1.06zM12 7.5A4.5 4.5 0 1016.5 12 4.5 4.5 0 0012 7.5z"/>
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.93 12.8l4.38 4.38 1.41-1.41-4.38-4.38A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 104.08 9.41A5.5 5.5 0 0010.5 5z"/></svg>
+            </button>
+            <a href="https://quantmemo.com/account" class="nav-account">Sign in</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section-shell">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Quantitative finance, research, and trading</p>
+              <h1>Everything quant, in one place.</h1>
+              <p class="lede">
+                Learn the foundations, sharpen your interview prep, and build your daily practice habit with clear paths for beginners and experienced learners alike.
+              </p>
+              <div class="hero-actions">
+                <a href="https://quantmemo.com/learn" class="primary-button">Start Learning <span aria-hidden="true">→</span></a>
+                <a href="https://quantmemo.com/daily" class="secondary-button">Today's Five <span aria-hidden="true">→</span></a>
+              </div>
+              <div class="mini-pills" aria-label="Quick entry points">
+                <span>Start from zero</span>
+                <span>Interview prep</span>
+                <span>Daily practice</span>
+              </div>
+              <div class="hero-meta">
+                <div>
+                  <span class="meta-label">Concepts</span>
+                  <strong>114+</strong>
+                </div>
+                <div>
+                  <span class="meta-label">Solved</span>
+                  <strong>1,544</strong>
+                </div>
+                <div>
+                  <span class="meta-label">Focus</span>
+                  <strong>3h+</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-hidden="true">
+              <div class="visual-panel">
+                <div class="grid-lines"></div>
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+                <div class="chart chart-line line-a"></div>
+                <div class="chart chart-line line-b"></div>
+                <div class="chart chart-bars">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="equation eq-one">E[X] = ∑ x p(x)</div>
+                <div class="equation eq-two">σ² = Var(X)</div>
+                <div class="equation eq-three">dS = μSdt + σSdW</div>
+                <div class="floating-card">
+                  <span class="mini-tag">Live notebook</span>
+                  <strong>Trend + odds</strong>
+                  <div class="mini-metrics">
+                    <span>p = 0.68</span>
+                    <span>Sharpe 1.8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell start-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Where do you want to start?</p>
+            </div>
+            <div class="start-grid">
+              <a href="https://quantmemo.com/learn" class="start-card reveal">
+                <span class="card-index">01</span>
+                <h3>I'm new to quant</h3>
+                <p>Start with the math and stats foundations that make everything else click.</p>
+              </a>
+              <a href="https://quantmemo.com/questions" class="start-card reveal">
+                <span class="card-index">02</span>
+                <h3>Interview-ready</h3>
+                <p>Practice probability, statistics, brainteasers, and coding questions.</p>
+              </a>
+              <a href="https://quantmemo.com/strategies" class="start-card reveal">
+                <span class="card-index">03</span>
+                <h3>Build strategies</h3>
+                <p>Explore systematic trading, backtesting, ML, and market concepts.</p>
+              </a>
+              <a href="https://quantmemo.com/daily" class="start-card reveal emphasis">
+                <span class="card-index">04</span>
+                <h3>Today's challenge</h3>
+                <p>Jump straight into the daily set and keep your streak going.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell curriculum-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Curriculum</p>
+              <h2>Quant learning path</h2>
+            </div>
+
+            <div class="roadmap reveal" aria-label="Quant learning roadmap">
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">01</span>
+                <div class="stage-content">
+                  <h3>Mathematics</h3>
+                  <p>Linear algebra, calculus, optimization, and probability foundations.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">02</span>
+                <div class="stage-content">
+                  <h3>Statistics & Econometrics</h3>
+                  <p>Inference, regression, time series, and causal reasoning.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">03</span>
+                <div class="stage-content">
+                  <h3>Portfolio & Risk</h3>
+                  <p>Returns, risk premia, factor models, and allocation logic.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">04</span>
+                <div class="stage-content">
+                  <h3>Derivatives & Volatility</h3>
+                  <p>Options pricing, Greeks, stochastic processes, and volatility surfaces.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">05</span>
+                <div class="stage-content">
+                  <h3>Systematic Strategies</h3>
+                  <p>Signal design, execution, alpha decomposition, and portfolio construction.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">06</span>
+                <div class="stage-content">
+                  <h3>Backtesting & ML</h3>
+                  <p>Feature engineering, validation, benchmarking, and predictive models.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+              <div class="roadmap-stage" tabindex="0">
+                <span class="stage-number">07</span>
+                <div class="stage-content">
+                  <h3>Market Microstructure</h3>
+                  <p>Latency, liquidity, order flow, and execution quality.</p>
+                  <span class="stage-cta">Explore</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell workout-section">
+          <div class="container workout-shell reveal">
+            <div class="workout-copy">
+              <p class="eyebrow">Daily habit</p>
+              <h2>Your daily quant workout</h2>
+              <div class="workout-stats">
+                <strong>5 questions</strong>
+                <span>·</span>
+                <strong>~15 minutes</strong>
+              </div>
+              <p class="daily-message">5 questions. 15 minutes. Every day.</p>
+              <div class="progress-track" aria-label="Daily progress indicator">
+                <span class="progress-dot filled"></span>
+                <span class="progress-dot filled"></span>
+                <span class="progress-dot filled"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+              </div>
+              <p class="streak-text">Keep your streak alive.</p>
+            </div>
+
+            <div class="workout-card">
+              <div class="workout-topline">
+                <span class="meta-pill">Daily</span>
+                <span class="meta-number">#635 · 2026-09-27</span>
+              </div>
+              <ul class="question-list">
+                <li><span class="bullet done"></span>Probability</li>
+                <li><span class="bullet done"></span>Statistics</li>
+                <li><span class="bullet done"></span>Brainteasers</li>
+                <li><span class="bullet"></span>Market Making</li>
+                <li><span class="bullet"></span>Mental Math</li>
+              </ul>
+              <a href="https://quantmemo.com/daily" class="primary-button small">Solve today’s set</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell question-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Question bank</p>
+              <h2>Practice with the long tail of quant thinking</h2>
+            </div>
+
+            <div class="filter-row reveal" aria-label="Question categories">
+              <button class="filter-chip active" type="button">Probability</button>
+              <button class="filter-chip" type="button">Statistics</button>
+              <button class="filter-chip" type="button">Brainteasers</button>
+              <button class="filter-chip" type="button">Market Making</button>
+              <button class="filter-chip" type="button">Mental Math</button>
+              <button class="filter-chip" type="button">Coding</button>
+            </div>
+
+            <div class="bank-grid reveal">
+              <article class="question-card">
+                <span class="tag">Probability</span>
+                <h3>What are the middle passenger's chances?</h3>
+                <p>Compute the probability that passenger 99 gets their own seat under the random reallocation process.</p>
+                <a href="https://quantmemo.com/questions/probability-airplane-seat-s3">Open the full question →</a>
+              </article>
+              <article class="question-card featured">
+                <span class="tag">Statistics</span>
+                <h3>How big does the A/B test need to be?</h3>
+                <p>Estimate the required sample size per arm to detect a 1 percentage-point lift with 80% power.</p>
+                <a href="https://quantmemo.com/questions/statistics-ab-sample-size-mde-sa17">Open the full question →</a>
+              </article>
+            </div>
+
+            <div class="bank-link reveal">
+              <a href="https://quantmemo.com/questions">Browse the full question bank <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell news-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">What’s new</p>
+              <h2>What’s new at Quant Memo</h2>
+            </div>
+
+            <div class="news-grid reveal">
+              <article class="news-item highlighted">
+                <span class="news-category">Research</span>
+                <h3>What the market structure data is really saying</h3>
+                <p>Reading liquidity flows, order book fragility, and the cost of being early in a thin tape.</p>
+                <div class="news-meta"><span>8 min read</span><span>Today</span></div>
+              </article>
+              <article class="news-item">
+                <span class="news-category">Concepts</span>
+                <h3>Sharpe ratio, drawdown, and decision quality</h3>
+                <p>How signal quality and portfolio construction interact when the edge is small.</p>
+                <div class="news-meta"><span>6 min read</span><span>2 days ago</span></div>
+              </article>
+              <article class="news-item">
+                <span class="news-category">Strategies</span>
+                <h3>Portfolio construction for a low-signal regime</h3>
+                <p>Designing robust weighting schemes when the edge is noisy and timing is uncertain.</p>
+                <div class="news-meta"><span>5 min read</span><span>3 days ago</span></div>
+              </article>
+              <article class="news-item">
+                <span class="news-category">New questions</span>
+                <h3>Fresh probability and market-making problems</h3>
+                <p>Six new prompts across interview prep, coding, and quick mental-math drills.</p>
+                <div class="news-meta"><span>4 min read</span><span>1 week ago</span></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell research-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Research</p>
+              <h2>Research worth reading</h2>
+            </div>
+
+            <div class="research-feature reveal">
+              <div class="feature-details">
+                <span class="meta-label">Research · 8 min read</span>
+                <h3>Liquidity fragmentation and the hidden cost of execution</h3>
+                <p>Market structure is not just a trading problem—it is a statistical problem in how information arrives, is absorbed, and changes behavior.</p>
+                <a href="https://quantmemo.com/research">Read the piece →</a>
+              </div>
+            </div>
+
+            <div class="research-grid reveal">
+              <article class="mini-research">
+                <span class="meta-label">Memos · 5 min read</span>
+                <h3>Why the right metric changes with regime</h3>
+                <p>Measure what matters when the market shifts from risk-seeking to liquidity-constrained.</p>
+              </article>
+              <article class="mini-research">
+                <span class="meta-label">Research · 7 min read</span>
+                <h3>Probability and signal design under sparse data</h3>
+                <p>Estimating model robustness when the environment keeps changing and noise is asymmetric.</p>
+              </article>
+              <article class="mini-research">
+                <span class="meta-label">Concepts · 4 min read</span>
+                <h3>From clustering to factor decomposition</h3>
+                <p>How decision pipelines become clearer when the feature space is well structured.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell metrics-section">
+          <div class="container">
+            <div class="metrics-panel reveal">
+              <div class="metric">
+                <span class="metric-label">Concepts explored</span>
+                <strong class="counter" data-target="114">0</strong>
+                <small>+ today</small>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Correct answers</span>
+                <strong class="counter" data-target="58">0</strong>
+                <small>% answered correctly</small>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Focused reading</span>
+                <strong class="counter" data-target="3">0</strong>
+                <small>h+ today</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <a href="https://quantmemo.com/" class="brand inline-brand">
+              <span class="brand-mark">QM</span>
+              <span class="brand-text">Quant Memo</span>
+            </a>
+            <p>Learn quantitative finance, research, machine learning, and trading—from the foundations to the interview desk.</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/company/quantmemo/" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://www.instagram.com/quantmemo" aria-label="Instagram">Instagram</a>
+              <a href="https://x.com/quantmemo" aria-label="X">X</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <a href="https://quantmemo.com/daily">Daily</a>
+            <a href="https://quantmemo.com/research">Research</a>
+            <a href="https://quantmemo.com/strategies">Strategies</a>
+            <a href="https://quantmemo.com/tools">Tools</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Learn</h4>
+            <a href="https://quantmemo.com/learn">Learn</a>
+            <a href="https://quantmemo.com/interviews">Interviews</a>
+            <a href="https://quantmemo.com/concepts">Concepts</a>
+            <a href="https://quantmemo.com/glossary">Glossary</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>More</h4>
+            <a href="https://quantmemo.com/writing">Writing</a>
+            <a href="https://quantmemo.com/memos">Memos</a>
+            <a href="https://quantmemo.com/about">About</a>
+            <a href="https://quantmemo.com/careers">Careers</a>
+          </div>
+
+          <div class="footer-column newsletter-block">
+            <h4>Newsletter</h4>
+            <p>New strategies, new concepts, the occasional market note. No spam, and one click to leave whenever you want.</p>
+            <form class="newsletter-form">
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" type="email" placeholder="Email address" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
